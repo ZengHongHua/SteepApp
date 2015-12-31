@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/base_title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <!-- 用来填充状态栏==========-->
+    <LinearLayout
+        android:id="@+id/linear_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#3289ff"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+    </LinearLayout>
+
+    <!-- 标题栏========================-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3289ff"
+        >
+
+        <ImageView
+            android:src="@mipmap/back_n"
+            android:id="@+id/base_iv_left"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/base_tv_center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="#fffceb"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/base_tv_right"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="标题2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

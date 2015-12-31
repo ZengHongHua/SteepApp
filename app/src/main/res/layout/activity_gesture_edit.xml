@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+
+    <include layout="@layout/base_view"/>
+
+    <LinearLayout
+        android:id="@+id/gesture_tip_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.cnpay.steepapp.view.LockIndicator
+            android:id="@+id/lock_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"/>
+
+        <TextView
+            android:id="@+id/text_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:text="密码提示"
+            android:textColor="#F98F12"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/gesture_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip">
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_reset"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:text="绘制密码"
+        android:textColor="#816E6A"/>
+
+</LinearLayout>
